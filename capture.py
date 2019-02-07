@@ -4,7 +4,8 @@ import numpy as np
 #flags = [color for color in dir(cv2) if color.startswith('COLOR_')]
 #print flags
 
-cam = cv2.VideoCapture("http://192.168.43.1:7777/video?x.mjpg")
+cam = cv2.VideoCapture("http://192.168.43.1:7777/video?x.mjpg") #use your own IP address or
+#for webcam use 0 or other external camera use 1
 width = int(cam.get(cv2.CAP_PROP_FRAME_WIDTH))
 height = int(cam.get(cv2.CAP_PROP_FRAME_HEIGHT))
 fourcc = cv2.VideoWriter_fourcc(*'XVID')
