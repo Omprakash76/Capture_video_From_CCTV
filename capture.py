@@ -23,4 +23,3 @@ while(True):
 cam.release()
 vid.release()
 cv2.destroyAllWindows()
-
